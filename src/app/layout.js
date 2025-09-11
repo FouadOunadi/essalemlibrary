@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl" data-arp="">
       <body
-        className={`${tajawal.variable} antialiased font-tajawal bg-stone-100`}
+        className={`${tajawal.variable} antialiased font-tajawal !leading-none bg-stone-100`}
       >
         <ReduxProvider>
           <HeroUIProvider>

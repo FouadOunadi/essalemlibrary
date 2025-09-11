@@ -46,7 +46,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed w-full z-50 top-0 bg-stone-100" dir="rtl">
+    <nav className="fixed w-full z-50 top-0 bg-stone-100 border-b border-gray-200" dir="rtl">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           

@@ -114,7 +114,7 @@ export default function CartDrawer() {
       }}
     >
       <ModalContent className=" self-center md:!ml-8 ">
-        <ModalHeader className="flex flex-col gap-1">
+        <ModalHeader className="flex flex-col text-gray-950 gap-1">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <FiShoppingBag className="h-5 w-5" />
@@ -309,7 +309,7 @@ export default function CartDrawer() {
                   </div>
                   
                   <div className="border-t border-gray-200 pt-2">
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between text-gray-950 items-center">
                       <span className="font-bold text-lg">المجموع النهائي:</span>
                       <div className="flex items-center gap-2">
                         <span className="font-bold text-lg">
