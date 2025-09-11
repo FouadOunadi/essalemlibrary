@@ -357,49 +357,8 @@ const Hero = () => {
 
       {/* Mobile & Tablet Layout - Stacked */}
       <div className="lg:hidden flex flex-col space-y-4 p-4" dir="rtl">
-        
-        {/* Header/Welcome Section - Mobile */}
-        <div className="bg-white p-4 rounded-3xl">
-          <div className="relative w-full h-48 rounded-2xl overflow-hidden mb-4">
-            <Image
-              src={blob}
-              alt="Background blob"
-              fill
-              className="object-cover rounded-2xl opacity-30"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 via-slate-800/5 to-transparent"></div>
-            
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center space-y-2">
-                <h1 className="text-3xl md:text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-700 bg-clip-text text-transparent">
-                  مكتبة السلام
-                </h1>
-                <h2 className="text-2xl md:text-2xl font-bold text-gray-700 ">
-                  ترحب بكم
-                </h2>
-              </div>
-            </div>
-          </div>
-          
-          {/* Services Grid - Mobile Optimized */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 ">
-            {services.map((service, index) => (
-              <div key={index} className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 border border-gray-100">
-                <span className="text-lg">{service.icon}</span>
-                <span className="text-sm md:text-md text-gray-700 font-medium leading-relaxed">{service.text}</span>
-              </div>
-            ))}
-          </div>
-          
-          <Link href="/services" className="block">
-            <Button className="bg-gray-900 rounded-full text-white w-full">
-              استكشف المزيد
-            </Button>
-          </Link>
-        </div>
 
-        {/* Slider Section - Mobile */}
+         {/* Slider Section - Mobile */}
         <div className="h-48 md:h-80 rounded-3xl overflow-hidden relative ">
           <div className="relative w-full h-full" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             {slides.map((slide, index) => (
@@ -466,6 +425,49 @@ const Hero = () => {
             ))}
           </div>
         </div>
+        
+        {/* Header/Welcome Section - Mobile */}
+        <div className="bg-white p-4 rounded-3xl">
+          <div className="relative w-full h-48 rounded-2xl overflow-hidden mb-4">
+            <Image
+              src={blob}
+              alt="Background blob"
+              fill
+              className="object-cover rounded-2xl opacity-30"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 via-slate-800/5 to-transparent"></div>
+            
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center space-y-2">
+                <h1 className="text-3xl md:text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-700 bg-clip-text text-transparent">
+                  مكتبة السلام
+                </h1>
+                <h2 className="text-2xl md:text-2xl font-bold text-gray-700 ">
+                  ترحب بكم
+                </h2>
+              </div>
+            </div>
+          </div>
+          
+          {/* Services Grid - Mobile Optimized */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4 ">
+            {services.map((service, index) => (
+              <div key={index} className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 border border-gray-100">
+                <span className="text-lg">{service.icon}</span>
+                <span className="text-sm md:text-md text-gray-700 font-medium leading-relaxed">{service.text}</span>
+              </div>
+            ))}
+          </div>
+          
+          <Link href="/services" className="block">
+            <Button className="bg-gray-900 rounded-full text-white w-full">
+              استكشف المزيد
+            </Button>
+          </Link>
+        </div>
+
+       
 
         {/* Location & Contact - Mobile Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">

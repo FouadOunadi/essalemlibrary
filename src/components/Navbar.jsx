@@ -151,7 +151,7 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={closeMenu}
-                  className="flex items-center  space-x-3  px-3 py-2 text-sm hover:bg-stone-100 rounded-lg duration-300"
+                  className="flex items-center  space-x-3  px-3 py-2 text-sm text-gray-950 rounded-lg "
                 >
                   <span>{item.icon}</span>
                   <span>{item.name}</span>

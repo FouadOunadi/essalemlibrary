@@ -8,7 +8,7 @@ import Promos from '../components/Promos.jsx';
 export default function Home() {
 
   return (
-    <div dir="rtl" className="font-tajawal min-h-screen" >
+    <div className=" min-h-screen" >
       
       {/* Hero Section */}
       <Hero />
