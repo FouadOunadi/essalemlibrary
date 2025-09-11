@@ -347,7 +347,7 @@ const ServicesPage = () => {
   </div>
   </div>
 
-  <h1 className='text-lg font-semibold text-center pt-1'>{product.name}</h1>
+  <h1 className='text-lg font-semibold text-gray-950 text-center pt-1'>{product.name}</h1>
 </div>
 
                 ))}

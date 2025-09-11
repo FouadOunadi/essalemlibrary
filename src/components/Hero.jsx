@@ -340,7 +340,7 @@ const Hero = () => {
                 </div>
                 
                 <div className="group/social relative flex-1">
-                <a  href='https://wa.me/0660025759' target="_blank" rel="noopener noreferrer">
+                <a  href='https://wa.me/+213660025759' target="_blank" rel="noopener noreferrer">
                   <div className="flex items-center justify-center w-full h-13 bg-white/10 backdrop-blur-xl rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/10 hover:border-white/30 hover:scale-110 cursor-pointer">
                     <span className="ml-2 text-gray-200">essalemlibrary</span>
                     <FaWhatsapp className="text-gray-200 text-lg drop-shadow-sm" />
@@ -550,11 +550,14 @@ const Hero = () => {
                     <FaInstagram className="text-white text-sm" />
                   </div>
                 </a>
-                <div className="flex-1">
-                  <div className="flex items-center justify-center h-8 bg-white/10 backdrop-blur-xl rounded-lg hover:bg-white/20 transition-all duration-300">
-                    <FaFacebook className="text-white text-sm" />
+              
+                <a className="flex-1" href='https://wa.me/+213660025759' target="_blank" rel="noopener noreferrer">
+                 <div className="flex items-center justify-center h-8 bg-white/10 backdrop-blur-xl rounded-lg hover:bg-white/20 transition-all duration-300">
+                    
+                    <FaWhatsapp className="text-gray-200 text-lg drop-shadow-sm" />
                   </div>
-                </div>
+                  </a>
+              
               </div>
             </div>
           </div>

@@ -120,7 +120,7 @@ export default function CartDrawer() {
               <FiShoppingBag className="h-5 w-5" />
               <span>سلة التسوق</span>
             </div>
-            <div className="text-sm text-gray-500">
+            <div className="text-sm ml-4 text-gray-500">
               {totalQuantity} عنصر
             </div>
           </div>
@@ -216,7 +216,7 @@ export default function CartDrawer() {
                   <FiMinus className="h-3 w-3 sm:h-4 sm:w-4" />
                 </Button>
                 
-                <span className="w-6 sm:w-8 text-center font-medium text-sm sm:text-base">
+                <span className="w-6 sm:w-8 text-center font-medium text-sm text-gray-950">
                   {item.quantity}
                 </span>
                 
@@ -310,9 +310,9 @@ export default function CartDrawer() {
                   
                   <div className="border-t border-gray-200 pt-2">
                     <div className="flex justify-between text-gray-950 items-center">
-                      <span className="font-bold text-lg">المجموع النهائي:</span>
+                      <span className="font-bold text-lg ">المجموع النهائي:</span>
                       <div className="flex items-center gap-2">
-                        <span className="font-bold text-lg">
+                        <span className="font-bold text-lg text-gray-950">
                           {formatPrice(totalAmount)}
                         </span>
                       </div>
@@ -323,9 +323,9 @@ export default function CartDrawer() {
               
               {totalSavings === 0 && (
                 <div className="border-t border-gray-200 pt-2">
-                  <div className="flex justify-between items-center">
+                  <div className="flex justify-between text-gray-950 items-center">
                     <span className="font-bold text-lg">المجموع النهائي:</span>
-                    <span className="font-bold text-lg">{formatPrice(totalAmount)}</span>
+                    <span className="font-bold text-lg text-gray-950">{formatPrice(totalAmount)}</span>
                   </div>
                 </div>
               )}

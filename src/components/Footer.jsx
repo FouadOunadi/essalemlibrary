@@ -11,12 +11,12 @@ export default function Footer() {
         
         <div>
           <h3 className="text-lg font-semibold mb-4">خدماتنا</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 ">
      
-                <li><Link href="/services" className="text-gray-400 hover:text-yellow-300">عروض الألعاب</Link></li>
-                <li><Link href="/services" className="text-gray-400 hover:text-yellow-300">خدمات فليكسي</Link></li>
-                <li><Link href="/services" className="text-gray-400 hover:text-yellow-300">طباعة المذكرات</Link></li>
-                <li><Link href="/services" className="text-gray-400 hover:text-yellow-300">الخدمات الرقمية عبر الإنترنت</Link></li>
+                <li><Link href="/services" className="text-gray-300 hover:text-yellow-300">عروض الألعاب</Link></li>
+                <li><Link href="/services" className="text-gray-300 hover:text-yellow-300">خدمات فليكسي</Link></li>
+                <li><Link href="/services" className="text-gray-300 hover:text-yellow-300">طباعة المذكرات</Link></li>
+                <li><Link href="/services" className="text-gray-300 hover:text-yellow-300">الخدمات الرقمية عبر الإنترنت</Link></li>
  
 
             
