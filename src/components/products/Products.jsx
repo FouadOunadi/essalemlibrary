@@ -76,7 +76,6 @@ const Products = ({ selectedCategories = [] }) => {
   }, [selectedCategories, productsPerPage]);
 
 
-  console.log("products",products)
 
   // البحث عبر RPC ثم نجلب الصور من جدول prod_img لكل منتج + نعمل pagination في الفرونت
   const searchProducts = useCallback(async (page, search) => {
