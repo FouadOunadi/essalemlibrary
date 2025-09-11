@@ -53,7 +53,7 @@ const Categories = ({categories, setCategories, selectedCategories = [], onCateg
 
   // Skeleton loader component
   const CategorySkeleton = () => (
-    <div className="group flex flex-col space-y-2 items-center justify-center  bg-white p-2 border-1 rounded-full overflow-hidden border-gray-200 dark:bg-gray-800 dark:border-gray-600">
+    <div className="group flex flex-col space-y-2 items-center justify-center  bg-white p-2 border-1 rounded-full overflow-hidden border-gray-200">
      
         <Skeleton className="w-10 h-10 rounded-full" />
       
@@ -62,21 +62,21 @@ const Categories = ({categories, setCategories, selectedCategories = [], onCateg
   );
 
   return (
-    <div className=" dark:bg-gray-900 mt-4 pb-4 " dir="rtl">
+    <div className="  mt-4 pb-4 " dir="rtl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         {/* Section Header */}
         <div className="text-center mb-6">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white ">
+          <h2 className="text-3xl font-bold text-gray-900  ">
             تسوق حسب الفئة
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600  max-w-2xl mx-auto">
             اكتشف مجموعتنا الواسعة من المنتجات المنظمة حسب الفئات
           </p>
           
           {/* Selection Info */}
           {!isLoading && internalSelectedCategories.length > 0 && (
             <div className="mt-4 flex items-center  justify-center gap-4">
-              <span className="bg-indigo-100 w-[8rem] dark:bg-ingido-800 text-indigo-700 dark:text-blue-200 px-3 py-1 rounded-full text-sm font-medium">
+              <span className="bg-indigo-100 w-[8rem]  text-indigo-700  px-3 py-1 rounded-full text-sm font-medium">
                 {internalSelectedCategories.length} فئة محددة
               </span>
               <button
@@ -86,7 +86,7 @@ const Categories = ({categories, setCategories, selectedCategories = [], onCateg
                     onCategorySelect([]);
                   }
                 }}
-                className="text-red-600 cursor-pointer dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 text-sm font-medium transition-colors"
+                className="text-red-600 cursor-pointer  hover:text-red-800  text-sm font-medium transition-colors"
               >
                 مسح الكل
               </button>
@@ -113,11 +113,10 @@ const Categories = ({categories, setCategories, selectedCategories = [], onCateg
                   className={`
                      group bg-white p-2 cursor-pointer border-1 rounded-full hover:shadow-sm 
                      transition-all duration-300 overflow-hidden hover:scale-105
-                     dark:bg-gray-800
                      ${
                        isSelected 
-                         ? 'border-indigo-500 dark:border-indigo-400' 
-                         : 'border-gray-200 dark:border-gray-600'
+                         ? 'border-indigo-500 ' 
+                         : 'border-gray-200 '
                      }
                    `}
                 >
@@ -137,8 +136,8 @@ const Categories = ({categories, setCategories, selectedCategories = [], onCateg
                      text-lg font-semibold text-center mb-2 transition-colors
                      ${
                        isSelected 
-                         ? 'text-indigo-500 dark:text-indigo-400 font-bold' 
-                         : 'text-gray-900 dark:text-white group-hover:text-indigo-500 dark:group-hover:text-indigo-400'
+                         ? 'text-indigo-500  font-bold' 
+                         : 'text-gray-900  group-hover:text-indigo-500 '
                      }
                    `}>
                       {category.name}

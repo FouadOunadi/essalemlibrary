@@ -32,7 +32,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-stone-100 font-tajawal">
+    <div className="min-h-screen bg-stone-100">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12 md:py-20">
         <div className="container mx-auto px-4 md:px-6 text-center">
@@ -120,7 +120,7 @@ const ContactPage = () => {
                     <FiMapPin className="w-5 h-5 md:w-6 md:h-6 text-blue-600" />
                   </div>
                   {/* Arabic text */}
-                  <span className="text-white text-xs md:text-sm font-tajawal font-bold bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full">
+                  <span className="text-white text-xs md:text-sm font-bold bg-black/60 backdrop-blur-sm px-3 py-1 md:px-4 md:py-2 rounded-full">
                     موقعنا على الخريطة
                   </span>
                 </div>

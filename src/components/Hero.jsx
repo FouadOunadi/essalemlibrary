@@ -96,7 +96,7 @@ const Hero = () => {
   return (
     <>
       {/* Desktop Layout - Original Grid */}
-      <div className="hidden lg:grid grid-cols-3 grid-rows-2 text-tajawal gap-4 h-[calc(100vh-4rem)] p-6">
+      <div className="hidden lg:grid grid-cols-3 grid-rows-2  gap-4 h-[calc(100vh-4rem)] p-6">
         {/* First class: 1 column, 2 rows - Modern UI/UX Design */}
         <div className="col-span-1 row-span-2 bg-white p-2  rounded-3xl transition-all duration-300 group flex flex-col">
           {/* Image Section */}
@@ -113,10 +113,10 @@ const Hero = () => {
             {/* Centered Text */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="flex flex-col h-[8rem] items-center justify-center space-y-2">
-                <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-700 bg-clip-text text-transparent font-tajawal">
+                <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-700 bg-clip-text text-transparent">
                   مكتبة السلام
                 </h1>
-                <h1 className="text-2xl font-bold text-gray-700 font-tajawal relative group">
+                <h1 className="text-2xl font-bold text-gray-700 relative group">
                   <span className="relative">ترحب بكم</span>
                 </h1>
               </div>
@@ -124,7 +124,7 @@ const Hero = () => {
           </div>
 
           {/* Content Section */}
-          <div className="flex-1  font-tajawal p-3 flex flex-col">
+          <div className="flex-1  p-3 flex flex-col">
             
               {/* Services List */}
               <div className=" flex-1 space-y-3 mb-3">
@@ -137,7 +137,7 @@ const Hero = () => {
               </div>
             
              <Link href="/services" className="block  justify-self-end">
-            <Button className="bg-gray-900 rounded-full font-tajawal text-white w-full">
+            <Button className="bg-gray-900 rounded-full  text-white w-full">
               استكشف المزيد
             </Button>
           </Link>
@@ -169,13 +169,13 @@ const Hero = () => {
                   {/* Content */}
                   <div className=" space-y-4">
                     <div className="space-y-2">
-                      <h3 className="text-2xl font-bold font-tajawal">
+                      <h3 className="text-2xl font-bold">
                         {slide.title}
                       </h3>
-                      <p className="text-xl font-tajawal opacity-90">
+                      <p className="text-xl opacity-90">
                         {slide.subtitle}
                       </p>
-                      <p className="text-sm opacity-75 font-tajawal max-w-lg">
+                      <p className="text-sm opacity-75 max-w-lg">
                         {slide.description}
                       </p>
                     </div>
@@ -276,7 +276,7 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <span className="text-white text-sm font-tajawal font-bold bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full">
+              <span className="text-white text-sm font-bold bg-black/50 backdrop-blur-sm px-3 py-1 rounded-full">
                 موقعنا
               </span>
             </div>
@@ -305,7 +305,7 @@ const Hero = () => {
                     <FaPhone className="text-white text-sm drop-shadow-sm" />
                   </div>
                   <div className="text-right flex-1">
-                    <p className="text-white/90 font-semibold text-sm font-tajawal mb-1 drop-shadow-sm">الهاتف</p>
+                    <p className="text-white/90 font-semibold text-sm  mb-1 drop-shadow-sm">الهاتف</p>
                     <p className="text-white/75 text-xs font-medium tracking-wider font-mono">0658744115/0668674585</p>
                   </div>
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-500"></div>
@@ -320,7 +320,7 @@ const Hero = () => {
                       <FaEnvelope className="text-white text-sm drop-shadow-sm" />
                     </div>
                     <div className="text-right flex-1">
-                      <p className="text-white/90 font-semibold text-sm font-tajawal mb-1 drop-shadow-sm">البريد الإلكتروني</p>
+                      <p className="text-white/90 font-semibold text-sm mb-1 drop-shadow-sm">البريد الإلكتروني</p>
                       <p className="text-white/75 text-xs font-medium tracking-wider font-mono">essalemlibrary@gmail.com</p>
                     </div>
                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-500"></div>
@@ -356,7 +356,7 @@ const Hero = () => {
       </div>
 
       {/* Mobile & Tablet Layout - Stacked */}
-      <div className="lg:hidden flex flex-col space-y-4 p-4 font-tajawal" dir="rtl">
+      <div className="lg:hidden flex flex-col space-y-4 p-4" dir="rtl">
         
         {/* Header/Welcome Section - Mobile */}
         <div className="bg-white p-4 rounded-3xl">
@@ -372,7 +372,7 @@ const Hero = () => {
             
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center space-y-2">
-                <h1 className="text-3xl md:text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-700 bg-clip-text text-transparent font-tajawal">
+                <h1 className="text-3xl md:text-3xl font-bold bg-gradient-to-r from-gray-800 to-gray-700 bg-clip-text text-transparent">
                   مكتبة السلام
                 </h1>
                 <h2 className="text-2xl md:text-2xl font-bold text-gray-700 ">
@@ -393,7 +393,7 @@ const Hero = () => {
           </div>
           
           <Link href="/services" className="block">
-            <Button className="bg-gray-900 rounded-full font-tajawal text-white w-full">
+            <Button className="bg-gray-900 rounded-full text-white w-full">
               استكشف المزيد
             </Button>
           </Link>
@@ -420,16 +420,16 @@ const Hero = () => {
                 
                 <div className="relative z-10 w-full h-full flex items-center p-4 px-14 md:p-6 text-white">
                   <div className="w-full space-y-2 md:space-y-4">
-                    <h3 className="text-lg md:text-2xl font-bold font-tajawal leading-tight">
+                    <h3 className="text-lg md:text-2xl font-bold leading-tight">
                       {slide.title}
                     </h3>
-                    <p className="text-sm md:text-lg font-tajawal opacity-90">
+                    <p className="text-sm md:text-lg opacity-90">
                       {slide.subtitle}
                     </p>
-                    <p className="text-xs md:text-sm opacity-75 font-tajawal">
+                    <p className="text-xs md:text-sm opacity-75">
                       {slide.description}
                     </p>
-                   {/*  <Button className="bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 transition-all duration-300 rounded-full font-tajawal text-xs md:text-sm">
+                   {/*  <Button className="bg-white/20 backdrop-blur-sm border border-white/30 text-white hover:bg-white/30 transition-all duration-300 rounded-full text-xs md:text-sm">
                       اعرف المزيد
                     </Button> */}
                   </div>
@@ -499,7 +499,7 @@ const Hero = () => {
                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
                   </svg>
                 </div>
-                <span className="text-white text-xs font-tajawal font-bold bg-black/50 backdrop-blur-sm px-2 py-1 rounded-full">
+                <span className="text-white text-xs font-bold bg-black/50 backdrop-blur-sm px-2 py-1 rounded-full">
                   موقعنا
                 </span>
               </div>
@@ -525,7 +525,7 @@ const Hero = () => {
                   <FaPhone className="text-white text-xs" />
                 </div>
                 <div className="text-right flex-1">
-                  <p className="text-white text-xs font-tajawal mb-1">الهاتف</p>
+                  <p className="text-white text-xs mb-1">الهاتف</p>
                   <p className="text-white/75 text-xs font-mono">0658744115</p>
                 </div>
               </div>
@@ -536,7 +536,7 @@ const Hero = () => {
                   <FaEnvelope className="text-white text-xs" />
                 </div>
                 <div className="text-right flex-1">
-                  <p className="text-white text-xs font-tajawal mb-1">الإيميل</p>
+                  <p className="text-white text-xs  mb-1">الإيميل</p>
                   <p className="text-white/75 text-xs font-mono">essalemlibrary@gmail.com</p>
                 </div>
               </div>

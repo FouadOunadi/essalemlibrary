@@ -180,8 +180,8 @@ const Products = ({ selectedCategories = [] }) => {
   // --- UI ---
 
   const ProductCardSkeleton = () => (
-    <div className="group relative bg-white/80 backdrop-blur-sm border border-gray-200/50 dark:bg-gray-800/80 dark:border-gray-700/50 rounded-3xl p-3 shadow-sm">
-      <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-2xl overflow-hidden mb-4">
+    <div className="group relative bg-white/80 backdrop-blur-sm border border-gray-200/50  rounded-3xl p-3 shadow-sm">
+      <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200  rounded-2xl overflow-hidden mb-4">
         <Skeleton className="w-full h-full rounded-2xl" />
       </div>
       <div className="space-y-3">
@@ -196,7 +196,7 @@ const Products = ({ selectedCategories = [] }) => {
           <Skeleton className="h-6 w-16 rounded-full" />
         </div>
         <div className="flex items-center gap-3 pt-2">
-          <div className="flex items-center bg-gray-100 dark:bg-gray-700 rounded-xl border border-gray-200 dark:border-gray-600">
+          <div className="flex items-center bg-gray-100 rounded-xl border border-gray-200 ">
             <Skeleton className="w-8 h-8 rounded-lg" />
             <Skeleton className="w-8 h-8 mx-2 rounded-lg" />
             <Skeleton className="w-8 h-8 rounded-lg" />
@@ -280,7 +280,7 @@ const Products = ({ selectedCategories = [] }) => {
   }, [totalProducts, currentPage]);
 
   return (
-    <div className="bg-stone-100 dark:bg-gray-900 py-8" dir="rtl" ref={productsRef}>
+    <div className="bg-stone-100  py-8" dir="rtl" ref={productsRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Search Bar */}
@@ -291,7 +291,7 @@ const Products = ({ selectedCategories = [] }) => {
               value={inputValue}                 // ← فوري بدون تأخير
               onChange={handleInputChange}       // ← يحدّث searchTerm بعد التوقف
               placeholder="ابحث عن المنتجات..."
-              startContent={<FiSearch className="h-5 w-5 text-gray-400 dark:text-gray-500" />}
+              startContent={<FiSearch className="h-5 w-5 text-gray-400" />}
               size="lg"
               radius="full"
 
@@ -325,7 +325,7 @@ const Products = ({ selectedCategories = [] }) => {
                   <div key={groupIndex} className="mb-8">
                     {group.categoryName && selectedCategories.length === 0 && !searchTerm.trim() && (
                       <div className="mb-6">
-                        <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                        <h2 className="text-2xl font-bold text-gray-800 mb-2">
                           {group.categoryName}
                         </h2>
                         <div className="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
@@ -342,11 +342,11 @@ const Products = ({ selectedCategories = [] }) => {
               </>
             ) : (
               <div className="text-center py-12">
-                <div className="text-gray-400 dark:text-gray-500 text-6xl mb-4">📦</div>
-                <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+                <div className="text-gray-400 text-6xl mb-4">📦</div>
+                <h3 className="text-lg font-medium text-gray-900 mb-2">
                   لا توجد منتجات
                 </h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-500">
                   {searchTerm || selectedCategories.length > 0
                     ? 'لم يتم العثور على منتجات تطابق البحث أو الفئات المحددة'
                     : 'لا توجد منتجات متاحة حالياً'}

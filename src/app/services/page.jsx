@@ -52,7 +52,7 @@ const ServicesPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-stone-100 font-tajawal">
+    <div className="min-h-screen bg-stone-100 ">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
         <div className="container mx-auto px-6 text-center">

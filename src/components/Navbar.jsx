@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { FaHome, FaBox, FaTags, FaPhone, FaShoppingCart, FaBook } from 'react-icons/fa';
+import { FaHome, FaBox, FaTags, FaPhone, FaBook } from 'react-icons/fa';
 import { useCart } from '../lib/store/hooks';
 import { motion } from 'framer-motion';
 
@@ -92,7 +92,7 @@ export default function Navbar() {
             {/* Cart */}
             <button 
               onClick={toggleCartDrawer}
-              className="relative p-2 cursor-pointer bg-gray-800 hover:bg-gray-700 text-white rounded-full transition-all duration-300 group shadow-lg hover:shadow-xl"
+              className="relative p-2 cursor-pointer bg-gray-900 hover:bg-gray-700 text-white rounded-full transition-all duration-300 group shadow-lg hover:shadow-xl"
             >
               <svg className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -113,13 +113,29 @@ export default function Navbar() {
               onClick={toggleMenu}
               className="md:hidden p-2 pl-0"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                )}
-              </svg>
+            <svg
+  className="w-5 h-5 text-gray-900"
+  fill="none"
+  stroke="currentColor"
+  viewBox="0 0 24 24"
+>
+  {isMenuOpen ? (
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M6 18L18 6M6 6l12 12"
+    />
+  ) : (
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M4 6h16M4 12h16M4 18h16"
+    />
+  )}
+</svg>
+
             </button>
           </div>
         </div>

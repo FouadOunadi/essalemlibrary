@@ -82,9 +82,9 @@ const ProductCard = ({ product, isLoading = false }) => {
   // Skeleton loading state
   if (isLoading) {
     return (
-      <div className="group relative bg-white  border border-gray-200/50 dark:bg-gray-800/80 dark:border-gray-700/50 rounded-3xl p-3 shadow-xs">
+      <div className="group relative bg-white  border border-gray-200/50  rounded-3xl p-3 shadow-xs">
         {/* Image Skeleton */}
-        <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 rounded-2xl overflow-hidden mb-4">
+        <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200  rounded-2xl overflow-hidden mb-4">
           <Skeleton className="w-full h-full rounded-2xl" />
         </div>
 
@@ -108,7 +108,7 @@ const ProductCard = ({ product, isLoading = false }) => {
           {/* Quantity and Add to Cart Skeleton */}
           <div className="flex items-center gap-3 pt-2">
             {/* Quantity Controls Skeleton */}
-            <div className="flex items-center bg-gray-100 dark:bg-gray-700 rounded-xl border border-gray-200 dark:border-gray-600">
+            <div className="flex items-center bg-gray-100 rounded-xl border border-gray-200 ">
               <Skeleton className="w-8 h-8 rounded-lg" />
               <Skeleton className="w-8 h-8 mx-2 rounded-lg" />
               <Skeleton className="w-8 h-8 rounded-lg" />
@@ -125,7 +125,7 @@ const ProductCard = ({ product, isLoading = false }) => {
   // Actual product card
   return (
     <>
-      <div className="group relative overflow-hidden bg-white/80 backdrop-blur-sm border border-gray-200/50 dark:bg-gray-800/80 dark:border-gray-700/50 rounded-3xl p-3 shadow-sm hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
+      <div className="group relative overflow-hidden bg-white/80 backdrop-blur-sm border border-gray-200/50 rounded-3xl p-3 shadow-sm hover:shadow-lg hover:scale-[1.02] transition-all duration-300">
         
         {/* Availability Badge */}
         {!product.available && (
@@ -209,7 +209,7 @@ const ProductCard = ({ product, isLoading = false }) => {
             </>
           ) : (
             <div className="w-full h-full flex items-center justify-center">
-              <div className="text-gray-400 dark:text-gray-500 text-5xl opacity-50">
+              <div className="text-gray-400 text-5xl opacity-50">
                 📦
               </div>
             </div>
@@ -222,10 +222,10 @@ const ProductCard = ({ product, isLoading = false }) => {
         {/* Product Info */}
         <div className="space-y-3">
           <div>
-            <h3 className="font-bold text-lg text-gray-900 dark:text-white line-clamp-1 mb-1">
+            <h3 className="font-bold text-lg text-gray-900  line-clamp-1 mb-1">
               {product.name}
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-2 leading-relaxed">
+            <p className="text-gray-600  text-sm line-clamp-2 leading-relaxed">
               {product.description}
             </p>
           </div>
@@ -235,7 +235,7 @@ const ProductCard = ({ product, isLoading = false }) => {
               {(product.new_price && product.new_price !== 0) ? (
                 <div className="flex flex-col">
                   <div className="flex items-center gap-2">
-                     <span className="text-lg font-medium text-gray-500 dark:text-gray-400 line-through">
+                     <span className="text-lg font-medium text-gray-500  line-through">
                       {product.price}
                     </span>
                     <span className="text-2xl font-bold ">
@@ -243,16 +243,16 @@ const ProductCard = ({ product, isLoading = false }) => {
                     </span>
                    
                   </div>
-                  <span className="text-xs text-gray-500 dark:text-gray-400 -mt-1">
+                  <span className="text-xs text-gray-500  -mt-1">
                     دج
                   </span>
                 </div>
               ) : (
                 <>
-                  <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                  <span className="text-2xl font-bold text-gray-900">
                     {product.price}
                   </span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400 -mt-1">
+                  <span className="text-xs text-gray-500  -mt-1">
                     دج
                   </span>
                 </>
@@ -260,9 +260,9 @@ const ProductCard = ({ product, isLoading = false }) => {
             </div>
             
             {product.available && (
-              <div className="flex items-center gap-1 px-2 py-1 bg-green-50 dark:bg-green-900/20 rounded-full">
+              <div className="flex items-center gap-1 px-2 py-1 bg-green-50  rounded-full">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-xs text-green-600 dark:text-green-400 font-medium">
+                <span className="text-xs text-green-600  font-medium">
                   متوفر
                 </span>
               </div>
@@ -272,20 +272,20 @@ const ProductCard = ({ product, isLoading = false }) => {
           {/* Quantity and Add to Cart */}
           <div className="flex items-center gap-3 pt-2">
             {/* Quantity Controls */}
-            <div className="flex items-center bg-gray-100 dark:bg-gray-700 rounded-xl border border-gray-200 dark:border-gray-600">
+            <div className="flex items-center bg-gray-100  rounded-xl border border-gray-200 ">
               <Button
                 size="sm"
                 variant="light"
                 isIconOnly
                 onPress={incrementQuantity}
                 isDisabled={!product.available}
-                className="min-w-8 h-10 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
+                className="min-w-8 h-10 text-gray-600  hover:bg-gray-200 "
               >
                 <FiPlus className="w-3 h-3" />
               </Button>
 
               <div className="px-3 py-2 min-w-[2rem] text-center">
-                <span className="text-sm font-semibold text-gray-900 dark:text-white">
+                <span className="text-sm font-semibold text-gray-900 ">
                   {quantity}
                 </span>
               </div>
@@ -296,7 +296,7 @@ const ProductCard = ({ product, isLoading = false }) => {
                 isIconOnly
                 onPress={decrementQuantity}
                 isDisabled={!product.available || quantity <= 1}
-                className="min-w-8 h-10 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600"
+                className="min-w-8 h-10 text-gray-600  hover:bg-gray-200 "
               >
                 <FiMinus className="w-3 h-3" />
               </Button>

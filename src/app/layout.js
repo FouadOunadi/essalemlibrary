@@ -16,21 +16,17 @@ const tajawal = Tajawal({
   display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata = {
   title: "متجر منتجات المدرسة",
   description: "موقع التجارة الإلكترونية لمنتجات المدرسة",
+  viewport: "width=device-width, initial-scale=1.0", 
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl" data-arp="">
       <body
-        className={`${tajawal.variable} ${geistMono.variable} antialiased font-tajawal bg-stone-100`}
+        className={`${tajawal.variable} antialiased font-tajawal bg-stone-100`}
       >
         <ReduxProvider>
           <HeroUIProvider>
