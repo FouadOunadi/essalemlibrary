@@ -238,7 +238,7 @@ const ProductCard = ({ product, isLoading = false }) => {
                      <span className="text-lg font-medium text-gray-500  line-through">
                       {product.price}
                     </span>
-                    <span className="text-2xl font-bold ">
+                    <span className="text-2xl  font-bold text-gray-900">
                       {product.new_price}
                     </span>
                    
