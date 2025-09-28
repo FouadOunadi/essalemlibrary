@@ -569,7 +569,7 @@ const ProductsManagement = ({ onOpen }) => {
         scrollBehavior="inside"
       >
         <ModalContent>
-          <ModalHeader className="flex flex-col gap-1">
+          <ModalHeader className="flex flex-col gap-1 text-gray-950">
             تعديل المنتج
           </ModalHeader>
           <ModalBody>
@@ -580,6 +580,7 @@ const ProductsManagement = ({ onOpen }) => {
                 value={editForm.name}
                 onChange={(e) => handleEditFormChange('name', e.target.value)}
                 variant="bordered"
+                className='text-gray-950'
               />
               
               <Input
@@ -589,6 +590,7 @@ const ProductsManagement = ({ onOpen }) => {
                 value={editForm.price}
                 onChange={(e) => handleEditFormChange('price', e.target.value)}
                 variant="bordered"
+                className='text-gray-950'
               />
               
               <Input
@@ -622,6 +624,7 @@ const ProductsManagement = ({ onOpen }) => {
                   isSelected={editForm.available}
                   onValueChange={(value) => handleEditFormChange('available', value)}
                   color="success"
+                  className='text-gray-950'
                 >
                   متوفر
                 </Switch>
@@ -655,7 +658,7 @@ const ProductsManagement = ({ onOpen }) => {
          scrollBehavior="inside"
        >
          <ModalContent>
-           <ModalHeader className="flex flex-col gap-1">
+           <ModalHeader className="flex flex-col gap-1 text-gray-950">
              إضافة منتج جديد
            </ModalHeader>
            <ModalBody>

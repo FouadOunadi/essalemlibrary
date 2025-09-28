@@ -252,7 +252,7 @@ const OffersManagement = () => {
       {/* Add/Edit Promo Modal */}
       <Modal isOpen={isOpen || editingPromo} onClose={() => { onClose(); setEditingPromo(null); setNewPromo({ name: '', qte: '', price: '', product_id: '' }); }} size="2xl">
         <ModalContent>
-          <ModalHeader>{editingPromo ? 'تعديل العرض' : 'إضافة عرض جديد'}</ModalHeader>
+          <ModalHeader className='text-gray-950'>{editingPromo ? 'تعديل العرض' : 'إضافة عرض جديد'}</ModalHeader>
           <ModalBody>
             <div className="space-y-4">
               <Input
@@ -277,13 +277,13 @@ const OffersManagement = () => {
                 onChange={(e) => editingPromo ? setEditingPromo({...editingPromo, price: e.target.value}) : setNewPromo({...newPromo, price: e.target.value})}
               />
               <select
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 border border-gray-300 text-gray-950 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 value={editingPromo ? editingPromo.product_id : newPromo.product_id}
                 onChange={(e) => editingPromo ? setEditingPromo({...editingPromo, product_id: e.target.value}) : setNewPromo({...newPromo, product_id: e.target.value})}
               >
-                <option value="">اختر المنتج</option>
+                <option className='text-gray-950' value="">اختر المنتج</option>
                 {products.map((product) => (
-                  <option key={product.id} value={product.id}>
+                  <option key={product.id} value={product.id} className='text-gray-950'>
                     {product.name}
                   </option>
                 ))}
