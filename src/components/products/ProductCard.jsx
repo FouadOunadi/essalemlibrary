@@ -7,6 +7,7 @@ import { addItem } from '../../lib/store/cartSlice';
 import { FiPlus, FiMinus, FiShoppingCart, FiChevronLeft, FiChevronRight, FiTag, FiMaximize2, FiX } from 'react-icons/fi';
 
 const ProductCard = ({ product, isLoading = false }) => {
+  
   const [quantity, setQuantity] = useState(1);
   const [isAdding, setIsAdding] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

@@ -378,7 +378,7 @@ const updateCategory = async (id, name) => {
           </TableHeader>
           <TableBody emptyContent={"لا توجد فئات حالياً"}>
             {categories.map((category) => (
-              <TableRow key={category.id}>
+              <TableRow key={category.id} className='text-gray-950'>
                 <TableCell>
                   <div className="flex items-center gap-2">
                     {uploadingIcon === category.id ? (

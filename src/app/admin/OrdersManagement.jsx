@@ -104,7 +104,7 @@ const OrdersManagement = () => {
                 </TableRow>
               ) : (
                 orders.map((order) => (
-                  <TableRow key={order.id}>
+                  <TableRow key={order.id} className='text-gray-950'>
                     <TableCell>#{order.id}</TableCell>
                     <TableCell>{order.customer_name}</TableCell>
                     <TableCell>{order.phone}</TableCell>

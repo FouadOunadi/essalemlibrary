@@ -210,7 +210,7 @@ const OffersManagement = () => {
                 </TableRow>
               ) : (
                 promos.map((promo) => (
-                  <TableRow key={promo.id}>
+                  <TableRow key={promo.id} className='text-gray-950'>
                     <TableCell>{promo.name}</TableCell>
                     <TableCell>{promo.qte}</TableCell>
                     <TableCell>{promo.price} دج</TableCell>

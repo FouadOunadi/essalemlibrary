@@ -467,7 +467,7 @@ const ProductsManagement = ({ onOpen }) => {
             </TableHeader>
             <TableBody>
               {products.map((product) => (
-                <TableRow key={product.id}>
+                <TableRow key={product.id} className='text-gray-950'>
                   <TableCell>
                     <div className="flex items-center gap-2">
                       {uploadingImage === product.id ? (
